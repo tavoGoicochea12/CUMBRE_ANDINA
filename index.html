@@ -1,21 +1,173 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Abonos Orgánicos</title>
-  </head>
-  <body>
-    <h1>Abonos Orgánicos</h1>
-    <p>Los abonos orgánicos son una excelente manera de mejorar la calidad del suelo y aumentar la producción de cultivos. Aquí hay algunos tipos comunes de abonos orgánicos:</p>
-    <ul>
-      <li>Compost</li>
-      <li>Estiércol</li>
-      <li>Residuos de cosecha</li>
-      <li>Restos de comida</li>
-    </ul>
-    <p>Para obtener más información sobre cómo hacer abonos orgánicos, consulte los siguientes recursos:</p>
-    <ul>
-      <li><a href="https://www.epa.gov/recycle/composting-home">Compostaje en el hogar</a></li>
-      <li><a href="https://www.fao.org/3/y5102s/y5102s06.htm">Abonos orgánicos</a></li>
-    </ul>
-  </body>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nombre de la Empresa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #fff; /* Fondo blanco para el cuerpo */
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #f2f2f2;
+        }
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        section {
+            margin-top: 20px;
+            background-color: #f9f9f9; /* Fondo gris claro para las secciones */
+            padding: 20px; /* Agregado espacio interno */
+            border-radius: 10px; /* Borde redondeado */
+            text-align: center;
+        }
+        #contenido {
+            display: flex;
+            justify-content: space-between;
+            align-items: center; /* Centra verticalmente */
+        }
+        #logo-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* Alinea el contenido al espacio entre ellos */
+        }
+        #empresa-info {
+            margin-left: 20px; /* Ajusta el margen izquierdo en lugar del derecho */
+        }
+        #botones {
+            display: flex;
+            justify-content: center; /* Centra los botones */
+            margin-top: 10px; /* Reducido el margen superior */
+        }
+        .boton {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 0 5px; /* Ajusta el espacio entre los botones */
+        }
+        #imagen {
+            margin-top: 10px; /* Ajusta la altura de la sección de la imagen */
+            text-align: center;
+        }
+        #nuestra-empresa {
+            margin-top: 20px;
+            text-align: justify;
+        }
+        #producto-destacado {
+            margin-top: 20px;
+        }
+        .producto {
+            display: flex;
+            justify-content: center; /* Centra las imágenes horizontalmente */
+            align-items: center;
+            margin-bottom: 20px; /* Añade espacio entre las filas de imágenes */
+        }
+        .producto img {
+            width: 30%; /* Ajusta el ancho de las imágenes según tus necesidades */
+            height: auto;
+            margin: 0 5px; /* Ajusta el espacio entre las imágenes */
+        }
+        .descripcion {
+            text-align: center;
+            width: 30%; /* Ajusta el ancho de la descripción según tus necesidades */
+        }
+        #botones-producto {
+            display: flex;
+            justify-content: space-between; /* Alinea los botones a los extremos horizontales */
+            margin-top: 10px;
+        }
+        #botones-producto button {
+            margin: 0 5px; /* Ajusta el espacio entre los botones de producto */
+        }
+        #pie-pagina {
+            background-color: #f2f2f2;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px; /* Borde redondeado */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div id="contenido">
+            <div id="logo-info">
+                <img src="ruta/al/logo.png" alt="Logo de la Empresa" style="width: 100px; height: auto;">
+            </div>
+            <div id="empresa-info">
+                <p>Dirección: Direccion de la empresa</p>
+                <p>Número de Teléfono: Número de contacto</p>
+                <p>RUC: RUC de la empresa</p>
+                <p>Ubicación: Ubicación de la empresa</p>
+            </div>
+        </div>
+    </header>
+
+    <section id="botones">
+        <a href="abonos.html" class="boton">Abonos</a>
+        <a href="acerca.html" class="boton">Acerca</a>
+        <a href="contacto.html" class="boton">Contacto</a>
+        <a href="redes.html" class="boton">Redes Sociales</a>
+    </section>
+
+    <section id="imagen">
+        <h2>Imagen</h2>
+        <img src="ruta/a/la/imagen.jpg" alt="Imagen representativa">
+    </section>
+
+    <section id="nuestra-empresa">
+        <h2>Nuestra Empresa</h2>
+        <p>Descripción de lo que hace nuestra empresa...</p>
+    </section>
+
+    <section id="producto-destacado">
+        <h2>Producto Destacado</h2>
+
+        <div class="producto">
+            <img src="ruta/a/imagen-izquierda.jpg" alt="Producto Izquierda">
+            <img src="ruta/a/imagen-centro.jpg" alt="Producto Centro">
+            <img src="ruta/a/imagen-derecha.jpg" alt="Producto Derecha">
+        </div>
+
+        <div class="descripcion">
+            <p>Descripción del Producto</p>
+        </div>
+
+        <div id="botones-producto">
+            <button class="boton" onclick="moverIzquierda()">←</button>
+            <button class="boton" onclick="moverDerecha()">→</button>
+        </div>
+
+        <script>
+            function moverIzquierda() {
+                // Lógica para mover hacia la izquierda
+                console.log('Mover hacia la izquierda');
+            }
+
+            function moverDerecha() {
+                // Lógica para mover hacia la derecha
+                console.log('Mover hacia la derecha');
+            }
+        </script>
+    </section>
+
+    <div id="pie-pagina">
+        <p>Derechos de autor © 2024 Nombre de la Empresa. Todos los derechos reservados.</p>
+    </div>
+
+</body>
 </html>
