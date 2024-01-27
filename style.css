@@ -1,7 +1,94 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
-    background-color: #fff;
+    background-color: #fff; /* Fondo blanco para el cuerpo */
 }
-
-/* Resto del código CSS... */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f2f2f2;
+}
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+section {
+    margin-top: 20px;
+    background-color: #f9f9f9; /* Fondo gris claro para las secciones */
+    padding: 20px; /* Agregado espacio interno */
+    border-radius: 10px; /* Borde redondeado */
+    text-align: center;
+}
+#contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centra verticalmente */
+}
+#logo-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Alinea el contenido al espacio entre ellos */
+}
+#empresa-info {
+    margin-left: 20px; /* Ajusta el margen izquierdo en lugar del derecho */
+}
+#botones {
+    display: flex;
+    justify-content: center; /* Centra los botones */
+    margin-top: 10px; /* Reducido el margen superior */
+}
+.boton {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 5px; /* Ajusta el espacio entre los botones */
+}
+#imagen {
+    margin-top: 10px; /* Ajusta la altura de la sección de la imagen */
+    text-align: center;
+}
+#nuestra-empresa {
+    margin-top: 20px;
+    text-align: justify;
+}
+#producto-destacado {
+    margin-top: 20px;
+}
+.producto {
+    display: flex;
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    align-items: center;
+    margin-bottom: 20px; /* Añade espacio entre las filas de imágenes */
+}
+.producto img {
+    width: 30%; /* Ajusta el ancho de las imágenes según tus necesidades */
+    height: auto;
+    margin: 0 5px; /* Ajusta el espacio entre las imágenes */
+}
+.descripcion {
+    text-align: center;
+    width: 30%; /* Ajusta el ancho de la descripción según tus necesidades */
+}
+#botones-producto {
+    display: flex;
+    justify-content: space-between; /* Alinea los botones a los extremos horizontales */
+    margin-top: 10px;
+}
+#botones-producto button {
+    margin: 0 5px; /* Ajusta el espacio entre los botones de producto */
+}
+#pie-pagina {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px; /* Borde redondeado */
+}
