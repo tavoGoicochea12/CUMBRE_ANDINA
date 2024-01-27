@@ -8,7 +8,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: #f2f2f2;
+    background-color: #b7b3b3;
 }
 nav a {
     margin-right: 15px;
@@ -34,7 +34,8 @@ section {
     justify-content: space-between; /* Alinea el contenido al espacio entre ellos */
 }
 #empresa-info {
-    margin-left: 20px; /* Ajusta el margen izquierdo en lugar del derecho */
+    margin-left: 1000px;
+    margin-right: auto;
 }
 #botones {
     display: flex;
@@ -43,7 +44,7 @@ section {
 }
 .boton {
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: #36a946;
     color: #fff;
     border: none;
     text-decoration: none;
@@ -53,13 +54,70 @@ section {
     margin: 0 5px; /* Ajusta el espacio entre los botones */
 }
 #imagen {
-    margin-top: 10px; /* Ajusta la altura de la sección de la imagen */
     text-align: center;
+    margin-top: 5px;
 }
-#nuestra-empresa {
-    margin-top: 20px;
-    text-align: justify;
+
+#imagen img {
+    width: 100%;
+    height: auto;
+    display: block; /* Elimina el espacio adicional debajo de la imagen */
 }
+ #nuestra-empresa {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        #servicios-cumbre{
+            flex: 1;
+            max-width: 400px;
+            border: 2px solid #4CAF50;
+            border-radius: 15px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        #servicios-cumbre {
+            background-color: white;
+        }
+
+        #mision-vision {
+            background-color: white;
+        }
+
+        #contenido-imagen {
+            flex: 0.6;
+            background-image: url('ruta/emepresa.jpg');
+            background-size: cover;
+            background-position: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            color: #fff; /* Cambia el color del texto si es necesario */
+            padding: 10px; /* Añade espacio alrededor del contenido */
+        }
+
+#mision-vision {
+    max-width: 400px;
+}
+
+.cuadro {
+    border: 2px solid #4CAF50;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.cuadro h3 {
+    color: #4CAF50;
+}
+
+.cuadro p {
+    font-style: italic;
+}
+
+
+
 #producto-destacado {
     margin-top: 20px;
 }
