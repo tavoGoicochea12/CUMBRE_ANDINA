@@ -1,152 +1,120 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background-color: #fff; /* Fondo blanco para el cuerpo */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    
 }
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: #b7b3b3;
-}
-nav a {
-    margin-right: 15px;
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-section {
-    margin-top: 20px;
-    background-color: #f9f9f9; /* Fondo gris claro para las secciones */
-    padding: 20px; /* Agregado espacio interno */
-    border-radius: 10px; /* Borde redondeado */
-    text-align: center;
-}
+
 #contenido {
     display: flex;
-    justify-content: space-between;
-    align-items: center; /* Centra verticalmente */
+    background-color: #555;
+    padding: 10px;
+    align-items: center; /* Centra verticalmente los elementos en el contenedor */
+   
 }
+
 #logo-info {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Alinea el contenido al espacio entre ellos */
+    margin-right: 20px; 
 }
+
 #empresa-info {
-    margin-left: 1000px;
-    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    margin-left: auto; 
+    
 }
+
+#empresa-info p {
+    margin: 5px 0; /* Añade un margen de 5px arriba y abajo para los párrafos */
+    padding: 5px; /* Añade un poco de espacio interno para mejorar la legibilidad */
+    color: #fff; 
+    border-radius: 10px;
+}
+
+
+
+header {
+    background-color: #333;
+    color: white;
+    
+}
+
 #botones {
     display: flex;
-    justify-content: center; /* Centra los botones */
-    margin-top: 10px; /* Reducido el margen superior */
-}
-.boton {
+    justify-content: center;
+    background-color: #eee;
     padding: 10px;
-    background-color: #36a946;
-    color: #fff;
-    border: none;
-    text-decoration: none;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin: 0 5px; /* Ajusta el espacio entre los botones */
+    gap: 10px; /* Puedes ajustar el valor según el espacio deseado */
 }
+
+
+.boton {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
 #imagen {
     text-align: center;
-    margin-top: 5px;
+    margin: 10px;
 }
 
 #imagen img {
     width: 100%;
-    height: auto;
-    display: block; /* Elimina el espacio adicional debajo de la imagen */
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 10px;
 }
- #nuestra-empresa {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-        }
 
-        #servicios-cumbre{
-            flex: 1;
-            max-width: 400px;
-            border: 2px solid #4CAF50;
-            border-radius: 15px;
-            padding: 15px;
-            margin-bottom: 15px;
-        }
-
-        #servicios-cumbre {
-            background-color: white;
-        }
-
-        #mision-vision {
-            background-color: white;
-        }
-
-        #contenido-imagen {
-            flex: 0.6;
-            background-image: url('ruta/emepresa.jpg');
-            background-size: cover;
-            background-position: center;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            color: #fff; /* Cambia el color del texto si es necesario */
-            padding: 10px; /* Añade espacio alrededor del contenido */
-        }
-
-#mision-vision {
-    max-width: 400px;
+#nuestra-empresa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 }
 
 .cuadro {
-    border: 2px solid #4CAF50;
-    border-radius: 15px;
-    padding: 15px;
-    margin-bottom: 15px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
 }
 
-.cuadro h3 {
-    color: #4CAF50;
-}
-
-.cuadro p {
-    font-style: italic;
-}
-
-
-
-#producto-destacado {
+#mision-vision {
+    display: flex;
+    justify-content: space-around;
     margin-top: 20px;
 }
-.producto {
-    display: flex;
-    justify-content: center; /* Centra las imágenes horizontalmente */
-    align-items: center;
-    margin-bottom: 20px; /* Añade espacio entre las filas de imágenes */
-}
-.producto img {
-    width: 30%; /* Ajusta el ancho de las imágenes según tus necesidades */
-    height: auto;
-    margin: 0 5px; /* Ajusta el espacio entre las imágenes */
-}
-.descripcion {
+
+#producto-destacado {
     text-align: center;
-    width: 30%; /* Ajusta el ancho de la descripción según tus necesidades */
+    padding: 20px;
 }
+
+.producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.descripcion {
+    margin: 10px 0;
+}
+
 #botones-producto {
-    display: flex;
-    justify-content: space-between; /* Alinea los botones a los extremos horizontales */
     margin-top: 10px;
 }
-#botones-producto button {
-    margin: 0 5px; /* Ajusta el espacio entre los botones de producto */
-}
+
 #pie-pagina {
-    background-color: #f2f2f2;
-    padding: 10px;
+    background-color: #333;
+    color: white;
     text-align: center;
-    border-radius: 10px; /* Borde redondeado */
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
