@@ -1,0 +1,117 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background: #081b29;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  ::-webkit-input-placeholder {
+    color: #eee;
+  }
+  
+  /* Contenedor principal */
+  .wrapper {
+    position: relative;
+    width: 800px;
+    height: 65vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 3px solid #00ffff;
+    box-shadow: 0 0 50px 0 #00a6bc;
+  }
+  
+  /* Estilos para el formulario */
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .title {
+    font-size: 35px;
+    color: white;
+  }
+  
+  .inp {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+  }
+  
+  .input {
+    border: none;
+    outline: none;
+    background: none;
+    width: 260px;
+    margin-top: 40px;
+    padding-right: 10px;
+    font-size: 17px;
+    color: #0ef;
+  }
+  
+  /* Estilos para el botón de envío y el pie de página */
+  .submit {
+    border: none;
+    outline: none;
+    width: 288px;
+    margin-top: 30px;
+    padding: 10px 0;
+    font-size: 20px;
+    border-radius: 40px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background: linear-gradient(45deg, #0ef, #c800ff);
+  }
+  
+  .footer {
+    letter-spacing: 0.5px;
+    color: white ;
+    font-size: 15px;
+  }
+  
+  .link {
+    color: #0ef;
+    text-decoration: none;
+  }
+  
+  .banner {
+    position: absolute;
+    width: 100%;
+    height: 450px;
+    overflow: hidden; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: -1;
+  }
+  
+  .banner::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 110%;
+    
+    background: linear-gradient(to right, #00f, #d248ad);
+    clip-path: polygon(30% 0, 100% 0, 100% 100%, 70% 100%);
+    z-index: -1;
+  }
+  
+  .welcome_text {
+    position: relative;
+    font-size: 40px;
+    color: white;
+    top: 30%;
+    left: 40%;
+    transform: translate(20%, 10%);
+  }
+  
+  .para {
+    line-height: 50px;
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+  

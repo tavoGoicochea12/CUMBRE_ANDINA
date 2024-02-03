@@ -1,0 +1,59 @@
+/* Estilos para el formulario de registro */
+#registerForm {
+    /* Cambiado de display: none; a display: block; */
+    display: block;
+}
+
+/* Estilos para los campos de entrada */
+#registerForm .inp {
+    margin-bottom: 20px;
+}
+
+/* Estilos para el botón de registro */
+#registerForm .submit {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+}
+
+/* Estilos para el enlace de cambio entre formularios */
+#registerForm .footer .link {
+    color: #4CAF50;
+}
+
+/* Estilos generales para ambos formularios */
+.form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+/* Estilos para el contenedor principal */
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estilos para el banner */
+.banner {
+    flex: 1;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+}
+
+/* Otros estilos */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.title {
+    text-align: center;
+    color: #333;
+}
