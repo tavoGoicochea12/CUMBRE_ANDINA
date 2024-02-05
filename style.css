@@ -50,12 +50,14 @@ header {
 
 
 .boton {
-    text-decoration: none;
+    text-decoration:none;
     color: #333;
     padding: 10px 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+/* Estilos de los botones */
+
 
 #imagen {
     text-align: center;
