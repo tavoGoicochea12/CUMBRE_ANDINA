@@ -1,24 +1,25 @@
-body {
+/* Estilos para la sección de historia y trayectoria */
+.historia-trayectoria {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-image: url('ruta/emepresa.jpg'); /* URL o ruta de la imagen de fondo */
+    background-size: cover; /* Para asegurar que la imagen de fondo cubra toda la sección */
+    color: white; /* Color del texto */
+    padding: 20px; /* Espaciado interno */
 }
 
-h1 {
+.historia-trayectoria h1 {
     margin: 0;
 }
 
-section {
+.historia-trayectoria section {
     padding: 20px;
 }
 
-footer {
+.historia-trayectoria footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 10px 0;
 }
-
-
-
-/* Resto de los estilos, si los hay */
