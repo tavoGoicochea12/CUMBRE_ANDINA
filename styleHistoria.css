@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#historia, #trayectoria {
+    background-image: url('img/historiatrayectoria.jpg'); /* Cambiar 'img/historia_y_trayectoria.jpg' por la ruta de tu imagen */
+    background-size: cover;
+    color: white;
+}
+
+/* Resto de los estilos, si los hay */
