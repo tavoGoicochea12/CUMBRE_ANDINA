@@ -19,10 +19,6 @@ footer {
     padding: 10px 0;
 }
 
-#historia, #trayectoria {
-    background-image: url('img/historiatrayectoria.jpg'); /* Cambiar 'img/historia_y_trayectoria.jpg' por la ruta de tu imagen */
-    background-size: cover;
-    color: white;
-}
+
 
 /* Resto de los estilos, si los hay */
