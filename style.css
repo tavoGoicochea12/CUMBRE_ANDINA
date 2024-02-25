@@ -122,3 +122,41 @@ header {
     width: 100%;
 }
 
+.navbar {
+    background-color: #4F6F52;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-left: 20px
+}
+
+.navbar ul li a {
+    display: inline-block;
+    padding: 20px 50px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    background-color: #739072;
+}
+
+/* Estilos para el contenido de la página */
+.content {
+    padding: 20px;
+}
+
+.emp{
+    font-size: 20px;
+    color: #fff;
+}

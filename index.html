@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nombre de la Empresa</title>
+    <title>Cumbre Andina</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-
+    <div id="menu"></div>
     <header>
         <div id="contenido">
             <div id="logo-info">
@@ -21,15 +22,7 @@
             </div>
         </div>
     </header>
-
-    <section id="botones">
-        <a href="abonos.html" class="boton">Abonos</a>
-        <a href="acerca.html" class="boton">Acerca</a>
-        <a href="login.html" class="boton">Contacto</a>
-        <a href="redes.html" class="boton">Redes Sociales</a>
-       
-    </section>
-
+    
     <section id="imagen">
         
         <img src="ruta/Plaza_de_cajamarca.jpg" alt="Plaza de cajamarca">
@@ -86,4 +79,11 @@
     </div>
 
 </body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(function(){
+    $("#menu").load("navbar.html");
+});
+</script>
+
 </html>

@@ -5,8 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login Web</title>
   <link rel="stylesheet" href="styleLogin.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div id="menu2"></div>
   <div class="wrapper">
     <form action="#" class="form" id="loginForm">
       <h1 class="title">Inicio</h1>
@@ -28,5 +30,12 @@
 
   <!-- Incluye el script externo -->
   <script src="Loginscript.js"></script>
+  
 </body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(function(){
+      $("#menu2").load("navbar.html");
+  });
+  </script>
 </html>

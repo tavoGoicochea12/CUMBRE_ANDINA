@@ -1,27 +1,23 @@
 body {
-    width: 100vw;
-    height: 100vh;
-    background: #081b29;
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    margin: 0;
+    background: #D2E3C8;
     font-family: 'Arial', sans-serif;
   }
   
   ::-webkit-input-placeholder {
-    color: #eee;
+    color: #000000;
   }
   
   /* Contenedor principal */
   .wrapper {
     position: relative;
+    margin: auto; 
     width: 800px;
     height: 65vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border: 3px solid #00ffff;
-    box-shadow: 0 0 50px 0 #00a6bc;
+    color: #D2E3C8;
+    align-items: center; 
+  
   }
   
   /* Estilos para el formulario */
@@ -30,16 +26,18 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 65vh;
   }
   
   .title {
     font-size: 35px;
-    color: white;
+    color: rgb(8, 8, 8);
   }
   
   .inp {
     padding-bottom: 10px;
-    border-bottom: 2px solid #eee;
+    border-bottom: 2px solid #000000;
   }
   
   .input {
@@ -50,7 +48,6 @@ body {
     margin-top: 40px;
     padding-right: 10px;
     font-size: 17px;
-    color: #0ef;
   }
   
   /* Estilos para el botón de envío y el pie de página */
@@ -64,17 +61,17 @@ body {
     border-radius: 40px;
     letter-spacing: 1px;
     cursor: pointer;
-    background: linear-gradient(45deg, #0ef, #c800ff);
+    background: #4F6F52
   }
   
   .footer {
     letter-spacing: 0.5px;
-    color: white ;
+    color: rgb(0, 0, 0) ;
     font-size: 15px;
   }
   
   .link {
-    color: #0ef;
+    color: rgb(23, 128, 75);
     text-decoration: none;
   }
   
@@ -87,15 +84,16 @@ body {
     justify-content: center;
     align-items: flex-end;
     z-index: -1;
+    border: 3px solid #2d5a47;
   }
   
   .banner::before {
     content: "";
     position: absolute;
     width: 100%;
-    height: 110%;
+    height: 100%;
     
-    background: linear-gradient(to right, #00f, #d248ad);
+    background: linear-gradient(to right, #78A083, #B3C99C);
     clip-path: polygon(30% 0, 100% 0, 100% 100%, 70% 100%);
     z-index: -1;
   }
@@ -103,7 +101,7 @@ body {
   .welcome_text {
     position: relative;
     font-size: 40px;
-    color: white;
+    color: rgb(0, 0, 0);
     top: 30%;
     left: 40%;
     transform: translate(20%, 10%);
