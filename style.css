@@ -4,7 +4,9 @@ body {
     padding: 0;
     
 }
-
+.fondo{
+    background-color: #739072;
+}
 #contenido {
     display: flex;
     background-color: #555;
@@ -159,4 +161,23 @@ header {
 .emp{
     font-size: 20px;
     color: #fff;
+}
+/* Estilos para iconos de redes sociales */
+.redes-sociales {
+    list-style: none;
+    padding: 0;
+}
+
+.redes-sociales li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.redes-sociales li a {
+    color: hsl(0, 26%, 93%);
+    text-decoration: none;
+    font-size: 24px;
+}
+.carousel-text{
+    text-align: left;
 }

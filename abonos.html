@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda de Abonos</title>
     <link rel="stylesheet" href="styleAbonos.css">
+    <link rel="stylesheet" href="style.css">
+
 </head>
-<body>
+<body class="fondo">
+    <div id="menu"></div>
     <div class="container">
         <div class="product">
             <img src="img/abonos1.jpg" alt="produto 1">
@@ -39,4 +42,10 @@
         
     </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(function(){
+    $("#menu").load("navbar.html");
+});
+</script>
 </html>

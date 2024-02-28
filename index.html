@@ -5,53 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cumbre Andina</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
     
 </head>
-<body>
+<body class="fondo">
     <div id="menu"></div>
-    <header>
-        <div id="contenido">
-            <div id="logo-info">
-                <img src="ruta/Plaza_de_cajamarca.jpg" alt="Logo de la Empresa" style="width: 100px; height: auto;">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              
             </div>
-            <div id="empresa-info">
-                <p>Dirección: Direccion de la empresa</p>
-                <p>Número de Teléfono: Número de contacto</p>
-                <p>RUC: RUC de la empresa</p>
-                <p>Ubicación: Ubicación de la empresa</p>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/img4.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-md-block">
+                    <div class="carousel-text">
+                        <h3>Abonos Orgánicos:</h3>
+                        <p> Cumbre Andina se destaca como líder en el mercado, 
+                            ofreciendo abono orgánico de calidad superior para
+                            potenciar el crecimiento de cultivos de manera natural.</p>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/img2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-md-block">
+                    <div class="carousel-text">
+                    <h3> Consultoría en Gestión Ambiental </h3>
+                    <p> Cumbre Andina brinda estrategias y prácticas responsables 
+                    para promover la responsabilidad ambiental 
+                    en empresas y organizaciones.</p>
+                </div>
+                  
+                </div>
+              </div>
             </div>
-        </div>
-    </header>
-    
-    <section id="imagen">
-        
-        <img src="ruta/Plaza_de_cajamarca.jpg" alt="Plaza de cajamarca">
-    </section>
-
-    <section id="nuestra-empresa">
-        <div id="servicios-cumbre"  class="cuadro redondeado" >
-            <h2>Servicios Generales Cumbre Andina S.R.L</h2>
-            <p>Servicios Generales Cumbre Andina S.R.L se destaca como líder en el mercado, ofreciendo abono orgánico de calidad superior para potenciar el crecimiento de cultivos de manera natural. También nos especializamos en Consultorías en Gestión Ambiental, brindando estrategias y prácticas responsables para promover la responsabilidad ambiental en empresas y organizaciones.</p>
-        </div>
-    
-        
-    
-        <div id="mision-vision">
-            <div class="cuadro redondeado">
-                <h3>Misión</h3>
-                <p>"Ofrecer productos y servicios de alta calidad que impulsen la sostenibilidad en la agricultura, proporcionando soluciones responsables que beneficien tanto a los agricultores como al entorno natural."</p>
-            </div>
-    
-            <div class="cuadro redondeado">
-                <h3>Visión</h3>
-                <p>"Ser líderes en la implementación de prácticas agrícolas sostenibles, contribuyendo activamente a un futuro donde la agricultura y la conservación del medio ambiente se entrelazan de manera armoniosa."</p>
-            </div>
-        </div>
-    </section>
-    
-    
-    
-
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     <section id="producto-destacado">
         <h2>Producto Destacado</h2>
 
@@ -74,11 +74,18 @@
     </section>
 
     <div id="pie-pagina">
+        <p>Nuestras redes : </p>
+        <ul class="redes-sociales">
+            <li><a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://www.whatsapp.com"><i class="fab fa-whatsapp"></i></a></li>
+            <!-- Agrega más íconos y enlaces según sea necesario -->
+        </ul>
         <p>Derechos de autor © 2024 Cumbre Andina. Todos los derechos reservados.</p>
         <script src="PieDePaginaScript.js"></script>
     </div>
 
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
 $(function(){
