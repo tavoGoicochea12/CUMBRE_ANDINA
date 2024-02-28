@@ -6,6 +6,7 @@ body {
 }
 .fondo{
     background-color: #739072;
+    height: 50vh;
 }
 #contenido {
     display: flex;
