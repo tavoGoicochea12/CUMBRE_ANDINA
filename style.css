@@ -182,3 +182,6 @@ header {
 .carousel-text{
     text-align: left;
 }
+.hidden {
+    display: none;
+}
