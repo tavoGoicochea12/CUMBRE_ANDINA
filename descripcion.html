@@ -7,28 +7,131 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div id="descripcion1" class="descripcion hidden">
-            <h2>Humus de Lombriz 4 Estaciones 20kg</h2>
-            <p>Descripción del producto 1</p>
-        </div>
-        <div id="descripcion2" class="descripcion hidden">
-            <h2>Abono Líquido Para Horticultura, Frutales, Huertos, Compost</h2>
-            <p>Descripción del producto 2</p>
-        </div>
-        <div id="descripcion3" class="descripcion hidden">
-            <h2>Cal de obra en bolsa 20 kilos</h2>
-            <p>Descripción del producto 3</p>
-        </div>
-        <!-- Agrega más descripciones según sea necesario -->
+    <div class="container" id="descripcionContainer">
+        <!-- Las descripciones de los productos se generarán aquí -->
     </div>
     
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(function(){
+            var productos = [
+                {
+                    imagen: "Abonos/abonos1.jpg",
+                    titulo: "Humus de Lombriz 4 Estaciones 20kg",
+                    descripcion: "Descripción del producto 1"
+                },
+                {
+                    imagen: "Abonos/abonos2.jpg",
+                    titulo: "Abono Líquido Para Horticultura, Frutales, Huertos, Compost",
+                    descripcion: "Descripción del producto 2"
+                },
+                {
+                    imagen: "Abonos/abonos3.jpg",
+                    titulo: "Cal de obra en bolsa 20 kilos",
+                    descripcion: "Descripción del producto 3"
+                },
+                {
+                    imagen: "Abonos/abonos4.webp",
+                    titulo: "Corteza de pino Curada 3L",
+                    descripcion: "Descripción del producto 4"
+                },
+                {
+                    imagen: "Abonos/abono5.webp",
+                    titulo: "Feritizante Orgánico Súper triple 5kg Natural Garden",
+                    descripcion: "Descripción del producto 5"
+                },
+                {
+                    imagen: "Abonos/abono6.webp",
+                    titulo: "Fertilizante para rosas Bolsa x 1kg",
+                    descripcion: "Descripción del producto 6"
+                },
+                {
+                    imagen: "Abonos/abono7.jpg",
+                    titulo: "Cal Agricola X Kg",
+                    descripcion: "Descripción del producto 7"
+                },
+                {
+                    imagen: "Abonos/abono8.jpg",
+                    titulo: "Cal Agricola 25Kg, Hidroxido de Calcio Alcalinizante Uso Agricola",
+                    descripcion: "Descripción del producto 8"
+                },
+                {
+                    imagen: "Abonos/abonos9.webp",
+                    titulo: "Fertilizante de liberación lenta",
+                    descripcion: "Descripción del producto 9"
+                },
+                {
+                    imagen: "Abonos/abonos10.jpg",
+                    titulo: "Abono Universal",
+                    descripcion: "Descripción del producto 10"
+                },
+                {
+                    imagen: "Abonos/abonos11.webp",
+                    titulo: "Abono de Tomate",
+                    descripcion: "Descripción del producto 11"
+                },
+                {
+                    imagen: "Abonos/abonos12.jpg",
+                    titulo: "Abono para Césped",
+                    descripcion: "Descripción del producto 12"
+                },
+                {
+                    imagen: "Abonos/abonos13.webp",
+                    titulo: "Abono para Flores",
+                    descripcion: "Descripción del producto 13"
+                },
+                {
+                    imagen: "Abonos/abonos14.webp",
+                    titulo: "Abono para Árboles Frutales",
+                    descripcion: "Descripción del producto 14"
+                },
+                {
+                    imagen: "Abonos/abonos15.webp",
+                    titulo: "Abono para Plantas de Interior",
+                    descripcion: "Descripción del producto 15"
+                },
+                {
+                    imagen: "Abonos/abonos16.webp",
+                    titulo: "Abono para Orquídeas",
+                    descripcion: "Descripción del producto 16"
+                },
+                {
+                    imagen: "Abonos/abonos17.jpg",
+                    titulo: "Abono para Rosas",
+                    descripcion: "Descripción del producto 17"
+                },
+                {
+                    imagen: "Abonos/abonos18.webp",
+                    titulo: "Abono para Cactus",
+                    descripcion: "Descripción del producto 18"
+                },
+                {
+                    imagen: "Abonos/abonos19.jpg",
+                    titulo: "Abono para Hierbas Aromáticas",
+                    descripcion: "Descripción del producto 19"
+                },
+                {
+                    imagen: "Abonos/abonos20.webp",
+                    titulo: "Abono para Hortalizas",
+                    descripcion: "Descripción del producto 20"
+                }
+                // Agrega más productos según sea necesario
+            ];
+
             var index = window.location.hash.substring(1); // Obtiene el índice de la URL
-            $(".descripcion").addClass("hidden");
-            $("#descripcion" + index).removeClass("hidden");
+
+            // Genera las descripciones de los productos
+            for (var i = 0; i < productos.length; i++) {
+                var producto = productos[i];
+                var descripcionDiv = $("<div>")
+                    .attr("id", "descripcion" + (i + 1))
+                    .addClass("descripcion")
+                    .addClass(i + 1 == index ? "" : "hidden");
+                descripcionDiv.append($("<img>").attr("src", producto.imagen).attr("alt", "producto " + (i + 1)).css("width", "100%"));
+                descripcionDiv.append($("<h2>").text(producto.titulo));
+                descripcionDiv.append($("<p>").text(producto.descripcion));
+                $("#descripcionContainer").append(descripcionDiv);
+            }
         });
     </script>
 </body>
