@@ -1,0 +1,30 @@
+.descripcion {
+    width: 200px;
+    margin: 20px auto; /* Centra el bloque de descripción horizontalmente */
+    text-align: center;
+}
+
+.descripcion img {
+    max-width: 100%; /* Reduce el tamaño de la imagen */
+    height: auto; /* Mantiene la relación de aspecto de la imagen */
+    object-fit: cover;
+    display: block; /* Centra la imagen horizontalmente */
+    margin: 0 auto; /* Centra la imagen verticalmente */
+}
+
+.descripcion h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.descripcion p {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #739072; /* Añade el color de fondo verde */
+}
