@@ -41,7 +41,7 @@ body {
 }
 
 .product .btn {
-    background-color: #007bff;
+    background-color: #4F6F52;
     color: #fff;
     border: none;
     padding: 8px 20px;
@@ -51,5 +51,9 @@ body {
 }
 
 .product .btn:hover {
-    background-color: #0056b3;
+    background-color: #D2E3C8;
+}
+
+.btn{
+    background-color: #D2E3C8;
 }

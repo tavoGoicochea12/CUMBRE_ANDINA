@@ -7,9 +7,42 @@
     <link rel="stylesheet" href="styleAbonos.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="fondo">
+<body >
     <div id="menu"></div>
-    <div class="container">
+    <style>
+        .search-container {
+          max-width: 600px;
+          margin: 0 auto;
+          text-align: center;
+        }
+        input[type="text"] {
+          width: 70%;
+          padding: 10px;
+          margin: 10px 0;
+          border: 1px solid #cccccc;
+          border-radius: 5px;
+          box-sizing: border-box;
+        }
+        input[type="submit"] {
+          background-color: #007bff;
+          color: #ffffff;
+          border: none;
+          padding: 10px 20px;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+        input[type="submit"]:hover {
+          background-color: #0056b3;
+        }
+
+        
+      </style>
+      <div class="search-container">
+        <form action="/busqueda" method="GET">
+          <input type="text" placeholder="Buscar..." name="q" required>
+        </form>
+      </div>
+    <div class="container">  
         <div class="product">
             <img src="Abonos/abonos1.jpg" alt="producto 1">
             <h2>Humus de Lombriz 4 Estaciones 20kg</h2>
